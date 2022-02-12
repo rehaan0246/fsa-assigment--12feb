@@ -16,9 +16,7 @@ const productUpdate = (productId, data) => {
 };
 
 const getProducts = () => {
-    const projection = { };
-    const filter = {};``
-    return ProductModel.find(filter, projection);
+    return ProductModel.find();
 }
 
 module.exports = { addProduct,getProducts,productUpdate };
